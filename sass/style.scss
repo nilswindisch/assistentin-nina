@@ -1,0 +1,118 @@
+@import 'var';
+@import 'reset';
+@import 'modify';
+@import 'shame';
+
+html {
+  background: url('../img/bg-1.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-shadow: black 1px 1px;
+}
+
+body {
+  color: $font-color;
+}
+
+a {
+  color: $font-color;
+}
+
+.img-avatar {
+  width: $img-avatar-size;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+.img-instagram {
+  width: 25px;
+  margin-bottom: -6px;
+  margin-right: 10px;
+}
+
+.text-wrap {
+  line-height: 133%;
+}
+
+
+
+.title-wrap,
+.text-wrap,
+.social-wrap,
+.reference-wrap {
+  position: relative;
+  background-color: rgba(0, 0, 0, $background-opacity);
+  display: block;
+  padding: 15px;
+  margin: 20px auto;
+  width: 90%;
+}
+
+.text-wrap,
+.social-wrap,
+.reference-wrap {
+  @media (min-width: 420px) {
+    width: 300px;
+    margin-left: 20px;
+  }
+}
+
+/**
+ *
+ */
+.title-wrap {
+  font-weight: 900;
+  padding-bottom: 10px;
+  text-align: center;
+  @media (min-width: 420px) {
+    width: auto;
+    margin: 20px;
+  }
+  @media (min-width: 768px) {
+    width: 66%;
+    margin: 20px;
+  }
+  @media (min-width: 1200px) {
+    width: 50%;
+    margin: 20px;
+  }
+}
+
+.text-wrap,
+.social-wrap,
+.reference-wrap {
+  font-weight: lighter;
+}
+
+.drop {
+  position: absolute;
+  bottom: 20px;
+  @media (max-width: 420px) {
+    left: 20px;
+  }
+}
+
+// .reference {}
+
+  .reference__content {
+    display: inline-block;
+    padding-left: 15px;
+  }
+
+  .reference__image {
+    display: inline-block;
+  }
+
+  .reference__by {
+    font-size: $font-size * .75;
+    display: block;
+  }
+
+  .reference__name {
+    margin-top: 5px;
+    display: block;
+    font-size: $font-size * 1.5;
+    font-weight: 800;
+  }
