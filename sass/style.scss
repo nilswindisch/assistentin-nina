@@ -36,8 +36,6 @@ a {
   line-height: 133%;
 }
 
-
-
 .title-wrap,
 .text-wrap,
 .social-wrap,
@@ -54,7 +52,7 @@ a {
 .social-wrap,
 .reference-wrap {
   @media (min-width: 420px) {
-    width: 300px;
+    width: 400px;
     margin-left: 20px;
   }
 }
@@ -83,7 +81,7 @@ a {
 .text-wrap,
 .social-wrap,
 .reference-wrap {
-  font-weight: lighter;
+  font-weight: bold;
 }
 
 .drop {
